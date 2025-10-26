@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h3 class="footer-heading">{{ site.title }}</h3>
+        <p>{{ site.description }}</p>
+      </div>
+      
+      <div class="footer-col footer-col-2">
+        <h3 class="footer-heading">Connect</h3>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span>GitHub</span>
+            </a>
+          </li>
+          {% endif %}
+            {% if site.bluesky_username %}
+              <li>
+                <a href="https://bsky.app/profile/{{ site.bluesky_username }}">
+                  <span>Bluesky</span>
+                </a>
+              </li>
+            {% endif %}
+        </ul>
+      </div>
+      
+      <div class="footer-col footer-col-3">
+        <h3 class="footer-heading">Subscribe</h3>
+        <p><a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></p>
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

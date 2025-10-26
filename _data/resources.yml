@@ -1,0 +1,73 @@
+books:
+  - title: "The Value of Science"
+    author: "Richard Feynman"
+    year: 1955
+    description: "Feynman's exploration of the role and value of science in society, examining the relationship between scientific inquiry and human understanding."
+    tags:
+      - Philosophy of Science
+      - Physics
+      - Scientific Method
+  
+  - title: "Physics and Philosophy: The Revolution in Modern Science"
+    author: "Werner Heisenberg"
+    year: 1958
+    description: "A profound examination of how quantum mechanics has transformed our understanding of reality, blending physics with philosophical inquiry into the nature of knowledge and existence."
+    tags:
+      - Quantum Mechanics
+      - Philosophy
+      - Physics
+      - Epistemology
+  
+  - title: "Possible Worlds"
+    author: "Werner Heisenberg"
+    year: null
+    description: "Heisenberg's reflections on the philosophical implications of modern physics and the various interpretations of quantum reality."
+    tags:
+      - Quantum Physics
+      - Philosophy
+      - Reality
+  
+  - title: "Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character"
+    author: "Richard Feynman"
+    year: 1985
+    description: "An autobiographical collection of anecdotes that reveals Feynman's playful approach to life and science, showcasing the joy of curiosity and intellectual adventure."
+    tags:
+      - Biography
+      - Science
+      - Curiosity
+      - Humor
+  
+  - title: "Flatland: A Romance of Many Dimensions"
+    author: "Edwin Abbott Abbott"
+    year: 1884
+    description: "A mathematical fantasy that explores dimensions, perception, and social hierarchy through the story of a two-dimensional world, challenging readers to imagine realities beyond their experience."
+    tags:
+      - Mathematics
+      - Philosophy
+      - Dimensions
+      - Social Commentary
+
+media:
+  - type: "Website"
+    url: "https://pantheism.net/"
+    title: "Pantheism.net"
+    author: null
+    year: null
+    description: "The World Pantheist Movement promotes scientific pantheism, a nature-centered and naturalistic alternative to dogmatic supernatural religions. It is a form of spirituality strongly focused on Earth, love and care for Nature, human and animal rights."
+    tags:
+      - Pantheism
+      - Philosophy
+      - Spirituality
+      - Nature
+  
+  - type: "Video"
+    url: "https://youtu.be/GO5FwsblpT8"
+    title: "Pale Blue Dot"
+    author: "Carl Sagan"
+    year: 1994
+    description: "In this iconic video, Carl Sagan reflects on the significance of Earth as a tiny speck in the vast cosmos, emphasizing the importance of environmental awareness and our shared responsibility to care for our planet."
+    tags:
+      - Astronomy
+      - Philosophy
+      - Space Exploration
+      - Environmental Awareness
