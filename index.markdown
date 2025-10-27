@@ -50,7 +50,7 @@ title: Home
     {% endfor %}
   </div>
   
-  <div class="section-cta">
+  <div class="section-cta margin-top-sm">
     <a href="{{ '/blog' | relative_url }}" class="btn btn-primary">View All Posts</a>
   </div>
 </section>
@@ -82,7 +82,7 @@ title: Home
     {% endfor %}
   </div>
   
-  <div class="section-cta">
+  <div class="section-cta margin-top-sm">
     <a href="{{ '/resources' | relative_url }}" class="btn btn-primary">Explore All Resources</a>
   </div>
 </section>
