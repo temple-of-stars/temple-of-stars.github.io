@@ -33,6 +33,7 @@ plugins:
 
 # Use custom SCSS
 sass:
+  source: _sass
   style: compressed
 
 # Exclude from processing

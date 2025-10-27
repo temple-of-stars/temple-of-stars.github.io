@@ -1,0 +1,192 @@
+@use "variables" as *;
+
+// Section: Title Center
+.section-title-center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-sm;
+    color: var(--color-text);
+    
+    @media (max-width: $mobile) {
+      font-size: 2rem;
+    }
+  }
+  
+  .section-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    
+    @media (max-width: $mobile) {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-top: $spacing-sm;
+  }
+}
+
+// Section: Title Left
+.section-title-left {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-sm;
+    color: var(--color-text);
+    
+    @media (max-width: $mobile) {
+      font-size: 2rem;
+    }
+  }
+  
+  .section-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin: 0;
+    
+    @media (max-width: $mobile) {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .section-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-muted);
+    margin-top: $spacing-sm;
+  }
+}
+
+// Section: Text + Image (Split Layout)
+.section-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-xl;
+  align-items: center;
+  
+  &.reverse {
+    direction: rtl;
+    
+    > * {
+      direction: ltr;
+    }
+  }
+  
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+    gap: $spacing-lg;
+    
+    &.reverse {
+      direction: ltr;
+    }
+  }
+  
+  .split-content {
+    .split-title {
+      font-size: 2rem;
+      margin-bottom: $spacing-sm;
+      color: var(--color-text);
+      
+      @media (max-width: $mobile) {
+        font-size: 1.5rem;
+      }
+    }
+    
+    .split-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--color-text-muted);
+      margin-bottom: $spacing-md;
+    }
+  }
+  
+  .split-image {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: $radius-lg;
+      border: 1px solid var(--color-border);
+    }
+  }
+}
+
+// Section: Card Container
+.section-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-lg;
+  padding: $spacing-xl $spacing-md;
+  
+  @media (max-width: $mobile) {
+    padding: $spacing-lg $spacing-md;
+  }
+}
+
+// Section: Highlight Box
+.section-highlight {
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-primary);
+  border-radius: $radius-sm;
+  padding: $spacing-md;
+  margin: $spacing-lg 0;
+  
+  p {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+// Section: CTA
+.section-cta {
+  text-align: center;
+  margin-top: $spacing-md;
+  
+  &.left {
+    text-align: left;
+  }
+  
+  &.right {
+    text-align: right;
+  }
+}
+
+// Section: Grid Container
+.section-grid {
+  display: grid;
+  gap: $spacing-md;
+  max-width: 800px;
+  margin: 0 auto;
+
+  &.cols-2 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  &.cols-3 {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  
+  &.cols-4 {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  @media (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Section: List Container
+.section-list {
+  display: grid;
+  gap: $spacing-md;
+}

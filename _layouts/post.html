@@ -2,6 +2,32 @@
 layout: default
 ---
 
-<div class="home">
-  {{ content }}
-</div>
+<article class="post">
+  <section class="section-title-center">
+    <h1 class="section-title">{{ page.title }}</h1>
+    <div class="card-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </time>
+      {% if page.author %}
+      <span> • {{ page.author }}</span>
+      {% endif %}
+    </div>
+  </section>
+
+  <section>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </section>
+
+  {% if page.tags %}
+  <section>
+    <div class="tag-list">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+</article>

@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+// Wrapper
+.wrapper {
+  max-width: $desktop;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+  
+  @media (max-width: $mobile) {
+    padding: 0 $spacing-sm;
+  }
+}
+
+.page-content {
+  padding: $spacing-md;
+  min-height: calc(100vh - 300px);
+}
+
+// Section Container
+section {
+  padding: $spacing-md 0;
+  
+  &.section-compact {
+    padding: $spacing-sm 0;
+  }
+  
+  &.section-spacious {
+    padding: 5rem 0;
+  }
+  
+  @media (max-width: $mobile) {
+    padding: $spacing-sm 0;
+    
+    &.section-spacious {
+      padding: $spacing-lg 0;
+    }
+  }
+}

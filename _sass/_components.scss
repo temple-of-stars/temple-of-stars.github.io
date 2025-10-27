@@ -1,0 +1,142 @@
+@use "variables" as *;
+
+// Buttons
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: $radius-md;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  
+  &-primary,
+  &-secondary {
+    background: var(--color-primary);
+    color: white;
+    
+    &:hover {
+      background: var(--color-primary-hover);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Cards
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-lg;
+  padding: $spacing-md;
+  transition: transform 0.2s, border-color 0.2s;
+  
+  &:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+  }
+  
+  &-title {
+    margin: 0 0 $spacing-xs;
+    font-size: 1.25rem;
+    
+    a {
+      color: var(--color-text);
+      
+      &:hover {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+    }
+  }
+  
+  &-meta {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: $spacing-sm;
+  }
+  
+  &-description,
+  &-excerpt {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: $spacing-sm;
+  }
+  
+  &-link {
+    color: var(--color-primary);
+    font-weight: 500;
+    font-size: 0.9rem;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Tags
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(88, 166, 255, 0.1);
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  border-radius: $radius-xl;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  
+  &:hover {
+    background: rgba(88, 166, 255, 0.2);
+  }
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-xs;
+  margin-top: $spacing-sm;
+}
+
+// List Items
+.list-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: $radius-lg;
+  padding: $spacing-md;
+  transition: transform 0.2s, border-color 0.2s;
+  
+  &:hover {
+    transform: translateX(4px);
+    border-color: var(--color-primary);
+  }
+  
+  &-title {
+    margin: 0 0 $spacing-xs;
+    font-size: 1.25rem;
+    color: var(--color-text);
+    
+    a {
+      color: var(--color-primary);
+    }
+  }
+  
+  &-meta {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+  }
+  
+  &-description {
+    margin: 0.75rem 0;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+  }
+}
+
+// Type Badge
+.type-badge {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: 0.5px;
+}
