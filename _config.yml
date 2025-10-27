@@ -33,9 +33,11 @@ plugins:
 
 # Use custom SCSS
 sass:
+  sass_dir: _sass
+  style: compressed
+  source_map: false
   load_paths:
     - _sass
-  style: compressed
 
 # Exclude from processing
 exclude:
