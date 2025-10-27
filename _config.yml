@@ -33,7 +33,8 @@ plugins:
 
 # Use custom SCSS
 sass:
-  source: _sass
+  load_paths:
+    - _sass
   style: compressed
 
 # Exclude from processing
