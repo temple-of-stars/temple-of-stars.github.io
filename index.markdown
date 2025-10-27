@@ -3,9 +3,13 @@ layout: home
 title: Home
 ---
 
-<section class="section-title-left">
+<section class="section-title-center">
     <h1 class="section-title">Temple of Stars</h1>
     <p class="section-subtitle">The Temple of Stars is a community for pantheists, naturalists, and anyone else searching for truth and meaning.</p>
+</section>
+
+<section class="section-cta">
+    <a href="{{ site.discord-invite }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Join Our Discord Server</a>
 </section>
 
 <section>

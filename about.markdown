@@ -110,15 +110,3 @@ permalink: /about/
     </p>
   </div>
 </section>
-
-<section class="section-card">
-  <div class="section-title-center">
-    <h2 class="section-title">Join Us</h2>
-    <p class="section-description">
-      Whether you're a lifelong atheist curious about spirituality, a former believer seeking a new framework, or simply someone who looks up at the night sky and feels something profound—you belong here.
-    </p>
-    <div class="section-cta">
-      <a href="{{ '/contact' | relative_url }}" class="btn btn-primary">Get Involved</a>
-    </div>
-  </div>
-</section>
