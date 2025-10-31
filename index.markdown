@@ -9,7 +9,7 @@ title: Home
 </section>
 
 <section class="section-cta">
-    <a href="{{ site.discord-invite }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Join Our Discord Server</a>
+    <a href="{{ site.discord_invite }}" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Join Our Discord Server</a>
 </section>
 
 <section>
